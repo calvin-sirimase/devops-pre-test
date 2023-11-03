@@ -1,0 +1,7 @@
+HUB. DOKCER:
+https://hub.docker.com/repository/docker/calvin22/devops-pre-test/tags?page=1&ordering=last_updated
+
+GUTHUB: https://github.com/calvin-sirimase/devops-pre-test/tree/main
+
+untuk jalankan image dari docker online ke lokal: sudo docker run -p 8000:5000 calvin22/devops-pre-test:v1
+
