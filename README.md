@@ -1,11 +1,23 @@
 # devops-pre-test
-1. Google Kubernetes Engine (GKE): Ini adalah layanan Kubernetes yang dikelola yang akan digunakan untuk mendeploy aplikasi Anda.
-2. Container Registry: Tempat Anda akan menyimpan Docker images.
-3. Google Cloud Load Balancer: Digunakan untuk mengekspos layanan aplikasi ke publik melalui IP publik.
-4. Cloud SQL: Layanan database yang dikelola yang akan digunakan oleh aplikasi Anda (jika diperlukan).
-5. Google Cloud Storage: Digunakan untuk menyimpan file atau data lain yang dibutuhkan oleh aplikasi Anda.
-6. VPC (Virtual Private Cloud): Jaringan virtual untuk mengatur lalu lintas dan isolasi.
-7. Google Cloud IAM: Mengatur izin dan keamanan untuk sumber daya di GCP.
-8. Firewall Rules: Menerapkan aturan keamanan untuk mengontrol lalu lintas.
 
-Ini adalah panduan awal, dan arsitektur sesungguhnya akan bergantung pada kebutuhan aplikasi dan infrastruktur Anda.
+
+Arsitektur Tingkat Tinggi pada GCP:
+Google Kubernetes Engine (GKE):
+
+Gunakan Kubernetes Engine di Google Cloud untuk menampung aplikasi dalam wadah (container).
+GKE dapat digunakan untuk melakukan orkestrasi aplikasi yang di-dockerize menggunakan Kubernetes.
+Google Container Registry (GCR):
+
+Simpan Docker image yang telah Anda buat (pada poin 2) di Google Container Registry.
+GCR adalah registry docker bawaan dari Google Cloud Platform yang memungkinkan penyimpanan aman untuk image Docker.
+Networking:
+
+Anda perlu menyesuaikan layanan GKE dan mengatur networking di GCP.
+Pastikan untuk menyesuaikan jaringan antara layanan GKE, GCR, dan aplikasi yang akan di-host.
+Additional Services:
+
+Untuk deployment aplikasi ke Google Cloud, Anda mungkin membutuhkan layanan yang lain tergantung pada aplikasi Anda.
+Misalnya, Cloud Load Balancer, Cloud DNS, atau layanan lain yang dibutuhkan untuk aplikasi dan pengaturan infrastruktur.
+Security & IAM:
+
+Penting untuk mengatur keamanan, izin akses, dan manajemen identitas (IAM) untuk semua layanan yang Anda gunakan di GCP.
