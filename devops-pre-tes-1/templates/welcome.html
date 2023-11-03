@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS untuk memperbesar tulisan dan menggeser teks ke tengah */
+        body {
+            text-align: center;
+            font-size: 54px;
+        }
+    </style>
+</head>
+<body>
+    {% if nama %}
+        Selamat datang {{ nama }}
+    {% else %}
+        Anonymous
+    {% endif %}
+</body>
+</html>
