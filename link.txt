@@ -7,5 +7,6 @@ untuk jalankan image dari docker online ke lokal:
 docker pull calvin22/devops-pre-test:v1
 sudo docker run -p 8000:5000 calvin22/devops-pre-test:v1
 
-jalankan di: http://127.0.0.1:8000/welcome/calvin
+jalankan di: http://127.0.0.1:8000/welcome/calvin     untuk tampilan dengan nama
+jalankan di: http://127.0.0.1:8000/welcome/    untuk tampilan anonym
 
